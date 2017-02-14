@@ -1,0 +1,47 @@
+Seminario 1:
+    Los documentos de seminario deben ir en la carpeta doc. Falta poner stakeholders como los encargados del hosting, 
+    márqueting, gestión, atención al cliente, expertos de maquetación web, abogados que regulen el tema de la protección 
+    de datos, seguridad. Y en el glosario faltaría por describir cliente, catálogo, crédito. Pero por lo general está muy bien hecho.
+
+Seminario 2:
+    Falta la parte que teníais hecha de clase sobre la relación entre los diferentes casos de uso del proyecto. Por otro lado, 
+    los use cases se deberían hacer basándose en UML. Por lo demás buen ejercicio.
+
+Seminario 3:
+    La estructura del proyecto debería incluirse en un index.html. Los 4 tipos de usuarios deberían colgar de una entidad usuario. 
+    Se podría haber puesto más información sobre el juego de aventuras. Por lo demás está perfecto.
+
+Seminario 4:
+    No hay documento de clase. La estructura del proyecto debería tener un index.html dentro de la carpeta doc. En el diagrama de 
+    estados “Check information”, “Create an email”, … son acciones y no estados como se requiere. Lo demás es correcto.
+
+Seminario 5:
+    Falta poner en la estructura los seminarios en un index.html. Cada location y character pueden tener múltiples items. Cada 
+    Location puede tener múltiples Characters. Faltan atributos y métodos que podéis encontrar en las prácticas. Location no 
+    debería gestionar la memoria de Character.
+
+Seminario 6:
+    La modificación del diagrama debería incorporarse a un fichero index.html en el root de doc/. El character immune podría 
+    incluirse en el character por defecto (simplemente no le afecta la magia). El “ONE USE” debería incluirse como un posible 
+    decorator de Item, y tanto Decorator como Item deberían heredar de una clase AbstractItem. Entregado 9 dias despues de deadline.
+
+Seminario 7:
+    En el documento de clase los factories no tienen mucho sentido, se debería haber creado un factory para Character y sus subtipos, 
+    y otro para item y sus subtipos. En el documento entregado, no sería necesario juntar los abstracts factories de character e item 
+    porque el primero solo creará characters y el segundo solo creará items, así que son independientes. Por otro lado faltaría montar 
+    la jerarquía de los 3 creators que hay por debajo de AbstractCharacter, y de los creators de los item decorators y del propio item 
+    básico. Aparte falta especificar el método de creación como createItem o createCharacter.
+
+Seminario 8:
+    Entregado con 7 dias de retraso. Falta crear un weaponstate con las posibles weapons que puede tener, todos los moves deberían ser 
+    un único método en la clase location y el move lo ejecuta el character. No se han conectado las weapons con los items.
+
+Seminario 9:
+    Documento de clase no entregado. Los operadores se deberían utilizar con un solo parámetro. No se han implementado los operadores de 
+    matrix, ni se han hecho las pruebas pertinentes.
+
+Seminario 10:
+    No se ha entregado documento de clase. No se han añadido los componentes gráficos de view, no se ha especificado qué és signal y qué slot, 
+    ni las relaciones entre funciones. El controlador solo utiliza el modelo, el modelo actualiza sus variables y llama a la vista para que se 
+    refresque, el resto de conexiones son incorrectas.
+

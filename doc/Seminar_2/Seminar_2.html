@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC>
+
+<html>
+
+	<head>
+
+		<title>Seminar 2</title>
+		<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+		<link rel="stylesheet" href="style.css" type="text/css" />
+
+	</head>
+
+	<body>
+
+		<div id="leftColumn">
+
+			<h1>Enginyeria del Software</h1>
+
+			<p>Marc Bisquert Garcia 158634</p>
+
+			<p>Jesus Eloi Sanchez 148583</p>
+
+		</div>
+
+		<div id="content">
+			
+			<h1>SEMINARI 2</h1>
+			<h2>Identify requirements</h2>
+
+
+			<h3>Use case -> PURCHASE IN STORE</h3>
+
+			<p><b><u>CONTEXT</u></b>: User wants to purchase a game in the store.</p>
+
+			<p><b><u>PRIMARY ACTORS</u></b>: User (generalizes to Player).</p>
+
+			<p><b><u>SUPPORT ACTORS</u></b>: Internet provider, E-mail, Transfer System (such as Paypal).</p>
+
+			<p><b><u>PRECONDITIONS</u></b>: The user must be logged in as a Player.</p>
+
+			<p><b><u>SUCCESSFUL POSTCONDITIONS</u></b>: The game has been purchased.</p>
+
+			<p><b><u>UNSUCCESSFUL POSTCONDITIONS</u></b>: There has been an error while buying the game.</p>
+
+			<p><b><u>BASIC FLOW</u></b>:</p>			
+			<p><u>---| 1.</u> User looks for a game searching it by its words or category.</p>			
+			<p><u>---| 2.</u> System shows the results of the query.</p>			
+			<p><u>---| 3.</u> User picks up the desired game.</p>			
+			<p><u>---| 4.</u> System shows game's window what includes its creator and a brief description.</p>			
+			<p><u>---| 5.</u> User press the purchase or download button.</p>			
+			<p><u>---| 6.</u> System displays the transaction window and ask for confirmation.</p>			
+			<p><u>---| 7.</u> User confirms the purchasing.</p>			
+			<p><u>---| 8.</u> System redirects the user to the transfer system.</p>
+			<p><u>---| 9.</u> User has paid correctly.</p>
+			<p><u>---| 10.</u> System informs the user by email and send a unique download link.</p>
+			<p><u>---| 11.</u> User starts downloading the game and confirms when it has finished.</p>
+
+			<p><b><u>EXTENSIONS</u></b>:</p>			
+			<p><u>---| 2.a</u> The query result shows that our database does not have that game.</p>			
+			<p><u>---| 2.a.1</u> Offer similar games.</p>			
+			<p><u>---| 2.a.2</u> Go back to step 1.</p>
+			
+			<p>*</p>
+			<p><u>---| 7.a</u> Inform the user that our servers might be crashed and they must wait a few minutes.</p>			
+			<p><u>---| 7.b</u> The user confimation information is mistaken.</p>		
+			<p><u>---| 7.b.1</u> Launch an extension use case "User's confirmation".</p>
+
+			<p>*</p>
+			<p><u>---| 8.a</u> Transfer system is down.</p>			
+			<p><u>---| 8.a.1</u> Wait for a few minutes then redirect the user again to the transfer system.</p>
+
+			<p>*</p>
+			<p><u>---| 11.a</u> User can not open the download link.</p>			
+			<p><u>---| 11.a.1</u> Send another download link, better if it is stored in another server.</p>
+
+			<br></br>
+			<p>
+				<b>IMPLIED STAKEHOLDERS</b>
+
+				<li><u>Player</u></li>
+				<li><u>Users</u></li>
+				<li><u>Testers</u></li>
+			</p>
+
+			<br></br>
+			<p>
+				<b>DIAGRAM</b>
+				<img src="Diagram_UseCase_PurchaseinStore.png" alt="Image: Purchase in Store">
+			</p>
+
+
+			<br></br>
+			<h3>Use case -> UPLOAD A GAME</h3>
+
+			<p><b><u>CONTEXT</u></b>: User wants to upload a game.</p>
+
+			<p><b><u>PRIMARY ACTORS</u></b>: User (generalizes to Creator).</p>
+
+			<p><b><u>SUPPORT ACTORS</u></b>: Internet provider, E-mail, Uploading System, User (generalizes to Tester)</p>
+
+			<p><b><u>PRECONDITIONS</u></b>: The user must be logged in as a Creator.</p>
+
+			<p><b><u>SUCCESSFUL POSTCONDITIONS</u></b>: The game has been uploaded correctly.</p>
+
+			<p><b><u>UNSUCCESSFUL POSTCONDITIONS</u></b>: The uploading process have failed.</p>
+
+			<p><b><u>BASIC FLOW</u></b>:</p>			
+			<p><u>---| 1.</u> User presses the upload button.</p>			
+			<p><u>---| 2.</u> System shows the upload window.</p>			
+			<p><u>---| 3.</u> User uploads the game in a specific format.</p>			
+			<p><u>---| 4.</u> System checks the file's corectness.</p>			
+			<p><u>---| 5.</u> User confirms and accepts the terms and conditions.</p>			
+			<p><u>---| 6.</u> System notifies the user by e-mail that the game has been uploaded correctly.</p>
+
+			<p><b><u>EXTENSIONS</u></b>:</p>			
+			<p><u>---| 3.a</u> User can not upload the game into our servers.</p>			
+			<p><u>---| 3.a.1</u> System tells the user to wait for a few minutes.</p>						
+			<p><u>---| 3.a.2</u> Go back to step 3.</p>
+
+			<p>*</p>
+			<p><u>---| 4.a</u> System notices that the file format is not correct.</p>			
+			<p><u>---| 4.a.1</u> Indicate the mistakes in the file's format.</p>			
+			<p><u>---| 4.a.2</u> Go back to step 3.</p>
+
+			<p>*</p>
+			<p><u>---| 6.a</u> E-mail provider is crashed.</p>			
+			<p><u>---| 6.a.1</u> Tell the user that he will receive the confirmation e-mail lateky, although the game has been upload correctly.</p>
+
+			<br></br>
+			<p>
+				<b>IMPLIED STAKEHOLDERS</b>
+				<li><u>Creators</u></li> 
+				<li><u>System Administrators</u></li>
+				<li><u>Developers</u></li>
+				<li><u>Maintainers</u></li>
+				<li><u>Product engineers</u></li>
+			</p>
+
+			<br></br>
+			<p>
+				<b>DIAGRAM</b>
+				<img src="Diagram_UseCase_UploadaGame.png" alt="Image: Upload a Game">
+			</p>
+
+
+			<h3>Task 5: Updated glossary</h3>
+			
+			<li><u>Product Engineers and Testers</u>: They are the parts that contribute into the project's development.</li>
+
+			<li><u>Suppliers</u>: They are the parts that contribute into the project's development.</li>
+
+
+			<h3>Task 6: Updated obscure point</h3>
+			
+			<p><b>We should add an a quality poll for the users?</b>
+				<br> We have to introduce an a quality poll to verify our system works throught the users.</br>
+			</p>
+
+
+		</div>
+
+	</body>
+
+</html>

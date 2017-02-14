@@ -1,0 +1,108 @@
+What is the effect of the command rm README.md?
+
+ 	-To delete README file.
+
+What is the effect of the command git checkout README.md?
+
+<<<<<<< HEAD
+update to set the specified branch as the current branch.
+=======
+	-To clone the README.
+
+
+What is the output of git log?
+
+Our last commits.
+
+commit 643813bed851fa4a0d1cf8989b564ae446ca5c23
+Author: Chusy <recycled_loops@hotmail.com>
+Date:   Mon Jan 26 12:02:00 2015 +0100
+
+    readme_changes
+
+commit d327fe7aadff5098904cce3bcfc8f4d82f609778
+Author: Chusy <recycled_loops@hotmail.com>
+Date:   Mon Jan 26 11:12:29 2015 +0100
+
+    change
+
+commit 3d7f8b69723c0da3e1ff7b17fb268bd7a65ce413
+Author: Psique <marc.bisquert01@estudiant.upf.edu>
+Date:   Sun Jan 25 19:57:41 2015 +0100
+
+    Entrega: SEMINARI 1
+
+
+Find the ID ZZZZZZZ of the first commit you made to the repository. Execute the command
+git checkout ZZZZZZZ README.md. What is the content of README.md?
+
+
+
+# README #
+
+This README would normally document whatever steps are necessary to get your application up and running.
+
+### What is this repository for? ###
+
+* Quick summary
+* Version
+* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+
+### How do I get set up? ###
+
+* Summary of set up
+* Configuration
+* Dependencies
+* Database configuration
+* How to run tests
+* Deployment instructions
+
+### Contribution guidelines ###
+
+* Writing tests
+* Code review
+* Other guidelines
+
+### Who do I talk to? ###
+
+* Repo owner or admin
+* Other community or team contact
+
+
+What is the content of README.md after executing git checkout HEAD README.md?
+
+
+# README #
+
+This README would normally document whatever steps are necessary to get your application up and running.
+
+### What is this repository for? ###
+
+* Quick summary
+* Version
+* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+
+### How do I get set up? ###
+
+* Summary of set up
+* Configuration
+* Dependencies
+* Database configuration
+* How to run tests
+* Deployment instructions
+
+### Contribution guidelines ###
+
+* Writing tests
+* Code review
+* Other guidelines
+
+### Who do I talk to? ###
+
+* Repo owner or admin
+* Other community or team contact
+
+THIS IS MY README
+
+More text!
+>>>>>>> a72edb0b943357e9cd1391853d905f05d505e796

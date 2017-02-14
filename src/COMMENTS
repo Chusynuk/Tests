@@ -1,0 +1,41 @@
+Práctica 1:
+    El fichero de answers.txt no tiene todas las respuestas y las que hay estan poco especificadas. En cuanto al código, haría falta 
+    crear una nueva clase tipo Enclosure, que contenga una lista de punteros de Animal, e imprima la información de cada animal que 
+    contiene, pero por lo general la estructura y técnicas utilizadas son correctas.
+
+Práctica 2:
+    Los tests de item podrían haber sido algo más exhaustivos. Algunas variables de clases podrían ser más autoexplicativas. No 
+    se pasan los strings por referencia con el uso del const en las funciones. Los casos no compilan para los archivos originales 
+    de test, por lo que no se llega al estado de RED o GREEN.
+
+Práctica 3:
+    Se entregó 3 días más tarde. La idea del RED-GREEN-REFACTOR es de hacerlo por cada uno de los test de forma secuencial. 
+    Se podría haber hecho un refactoring de la función description llamando dentro de ella a las funciones items y characters. 
+    Los strings y clases que se pasan como parámetros deberían hacer uso del const y/o referencias. Hay problemas de memory leaking.
+
+Práctica 4:
+    Se debería implementar un findCharacter y findLocation en la clase World para reutilizar esas funciones en muchas otras y 
+    reducir líneas de código, complejidad y mantenimiento. Los últimos 4 test dan errores y memory leaks, se debería de dar un 
+    repaso a fondo hasta que esté todo correcto. Por lo demás está bien.
+
+Práctica 5:
+    AbstractItem no debería tener constructor. La Poción debería llamar al cure del Character. Trap debería llamar al damage 
+    del character. Por lo demás, práctica casi perfecta.
+
+Práctica 6:
+    El output de las funciones del decoratos no tendrian que tener valores fijo como por ej. “5 de vida”, tendrían que ser 
+    llamadas a funciones que imprimen esta información. Deberíais reutilizar funciones como findLocation o findCharacter 
+    que ya las tenéis implementadas para ahorraros lineas de código. No se ha implementado el patrón creator. 
+    Por lo demás, todo correcto.
+    
+Práctica 7:
+    La función cure de character debería devolver un string para no poner en clases como Potion.cxx “ gains 5 life” directamente 
+    en el return. Se ha puesto toda la lógica del hit en Character en vez del patrón state, así que significa que el patrón no se 
+    ha implementado. Tampoco se ha implementado el factory method.  Pasa los test, pero no tiene sentido darlos por buenos si el 
+    patrón no ha sido desarrollado.
+    
+Práctica 8:
+    Se debería haber hecho TDD para hacer pruebas en esta práctica tambien. La función cure de character debería devolver un string 
+    para no poner en clases como Potion.cxx “ gains 5 life” directamente en el return. El factory method y el patrón state siguen sin 
+    implementarse. Por lo demás la práctica es correcta.
+
